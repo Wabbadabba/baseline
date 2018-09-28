@@ -1,8 +1,8 @@
 ﻿Clear-Host
 
-$path = "C:\Users\wabschalls\"
+$path = "C:\"
 $filter = "*.txt"
-$output = "C:\Users\wabschalls\Desktop\test\testing.csv"
+$output = "C:\testing.csv"
 
 [System.Collections.ArrayList]$directory = @()
 Get-ChildItem -Path $path -Filter $filter -Recurse -ErrorAction SilentlyContinue| % {
